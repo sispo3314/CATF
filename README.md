@@ -15,7 +15,7 @@ This repository does not include datasets. Please download them from the officia
 - **PAMAP2** dataset is available at https://archive.ics.uci.edu/dataset/231/pamap2+physical+activity+monitoring
 
 ## Codebase Overview
-
+- `model.py`: Implementation of the proposed ReconcileHAR framework for wearable human activity recognition, including a Perceiver-style time-domain encoder, a learnable multi-scale filterbank, sample-wise conflict estimation, conflict-aware feature reconciliation, auxiliary classifiers, and the complete training objective.
 
 ## Citing this Repository
 If you use this code in your research, please cite:
