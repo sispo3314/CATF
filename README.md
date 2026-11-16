@@ -1,5 +1,6 @@
 # Disagreement-Conditioned Reconciliation of Time-Domain and Filterbank Representations for Wearable Human Activity Recognition
-<img width="1697" height="887" alt="image" src="https://github.com/user-attachments/assets/2bb1b90b-5da3-4d8c-808a-2bdfba6a6f96" />
+<img width="2417" height="1536" alt="overall" src="https://github.com/user-attachments/assets/d27c4ada-9ed8-4d2b-885c-9bd7591ad50d" />
+
 This repository implements the methodology proposed in the paper "Disagreement-Conditioned Reconciliation of Time-Domain and Filterbank Representations for Wearable Human Activity Recognition"
 
 ## Paper Overview
