@@ -170,8 +170,9 @@ class PerceiverTimeEncoder(nn.Module):
             ]
         )
 
+        self.final_norm = nn.LayerNorm(latent_dim)
+
         self.output_projection = nn.Sequential(
-            nn.LayerNorm(latent_dim),
             nn.Linear(latent_dim, output_dim),
             nn.LayerNorm(output_dim),
             nn.GELU(),
@@ -190,7 +191,7 @@ class PerceiverTimeEncoder(nn.Module):
         for block in self.self_attention_blocks:
             latents = block(latents)
 
-        return self.output_projection(latents.mean(dim=1))
+        return self.output_projection(self.final_norm(latents).mean(dim=1))
 
 
 # =============================================================================
